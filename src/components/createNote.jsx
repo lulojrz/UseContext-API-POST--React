@@ -20,10 +20,10 @@ const CreateNote = () => {
     }
 
   return (
-    <form onSubmit={handlesubmit}>
+    <form onSubmit={handlesubmit} className='form'>
         <label>Enter Note:</label>
-        <input type="text" name="note" onChange={handleInput}/>
-        <button type="submit">Create Note</button>
+        <input type="text" name="note" onChange={handleInput} clasName="form-control" />
+        <button type="submit" className='btn btn-primary'>Create Note</button>
       
     </form>
   )

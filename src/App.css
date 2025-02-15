@@ -7,7 +7,7 @@ body{
     width: 100vw;
     height: 100vh;
 }
-header{
+.nav-bar{
     width: 100%;
     top: 0;
     left:0;
@@ -21,16 +21,9 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-  
-}
 
 
-li a{
+ a{
     color: white;
     list-style-type: none;
     text-decoration: none;
@@ -57,4 +50,25 @@ text-align: center;
 }
 li input{
     width: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.form input{
+    border-radius: 5px;
+}
+.btn{
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+@media(max-width:550px){
+    .notes-container{
+        margin-top: 10px;
+        padding: 1rem;
+    }
+    .list-tasks form{display:flex;flex-direction: column; width: 100%;}
 }
