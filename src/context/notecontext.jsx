@@ -12,7 +12,6 @@ function NoteProviderWrapper(props) {
       );
       const data = await response.json();
       setNotes(data);
-      console.log(data)
     } catch (e) {
       console.log(e);
     }
